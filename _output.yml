@@ -11,6 +11,8 @@ bookdown::gitbook:
       whatsapp: true
       all: ['whatsapp']
     download: [["_main.pdf","PDF"],["_main.epub","EPUB"]]
+    fontsettings:
+      theme: night
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
