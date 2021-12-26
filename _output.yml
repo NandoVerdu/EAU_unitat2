@@ -6,9 +6,10 @@ bookdown::gitbook:
         <li><a href="./">A Minimal Book Example</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: false
+    edit: null
     sharing:
-      whatsapp:true
+      whatsapp: true
+      all: ['whatsapp']
     download: [["_main.pdf","PDF"],["_main.epub","EPUB"]]
 bookdown::pdf_book:
   includes:
