@@ -7,7 +7,9 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
-    download: ["_main.pdf", "_main.epub"]
+    download: null
+    sharing:
+      whatsapp :true
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
