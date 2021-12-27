@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Unitat 3 Cross-references | A Minimal Book Example</title>
+  <title>Unitat 3 Cross-references | swisscapital</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
 set in the _output.yml file.</p>" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Unitat 3 Cross-references | A Minimal Book Example" />
+  <meta property="og:title" content="Unitat 3 Cross-references | swisscapital" />
   <meta property="og:type" content="book" />
   
   
@@ -20,7 +20,7 @@ set in the _output.yml file.</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Unitat 3 Cross-references | A Minimal Book Example" />
+  <meta name="twitter:title" content="Unitat 3 Cross-references | swisscapital" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 The HTML output format for this example is bookdown::gitbook,
@@ -30,7 +30,7 @@ set in the _output.yml file.</p>" />
 <meta name="author" content="John Doe" />
 
 
-<meta name="date" content="2021-12-26" />
+<meta name="date" content="2021-12-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -200,7 +200,19 @@ div.csl-indent {
 <li class="chapter" data-level="7.2" data-path="sharing-your-book.html"><a href="sharing-your-book.html#pages"><i class="fa fa-check"></i><b>7.2</b> 404 pages</a></li>
 <li class="chapter" data-level="7.3" data-path="sharing-your-book.html"><a href="sharing-your-book.html#metadata-for-sharing"><i class="fa fa-check"></i><b>7.3</b> Metadata for sharing</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a>
+<ul>
+<li class="chapter" data-level="7.4" data-path="references.html"><a href="references.html#r-markdown"><i class="fa fa-check"></i><b>7.4</b> R Markdown</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="question.html"><a href="question.html"><i class="fa fa-check"></i><b>8</b> Question</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="question.html"><a href="question.html#answerlist"><i class="fa fa-check"></i><b>8.1</b> Answerlist</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="solution.html"><a href="solution.html"><i class="fa fa-check"></i><b>9</b> Solution</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="solution.html"><a href="solution.html#answerlist-1"><i class="fa fa-check"></i><b>9.1</b> Answerlist</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="meta-information.html"><a href="meta-information.html"><i class="fa fa-check"></i><b>10</b> Meta-information</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -213,7 +225,7 @@ div.csl-indent {
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">swisscapital</a>
           </h1>
         </div>
 
@@ -246,67 +258,14 @@ div.csl-indent {
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="cross.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, .<span class="dv">1</span>, .<span class="dv">1</span>))</span>
 <span id="cb3-2"><a href="cross.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pressure, <span class="at">type =</span> <span class="st">&#39;b&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:nice-fig"></span>
-<img src="Unitat2_files/figure-html/nice-fig-1.png" alt="Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases." width="80%" />
+<img src="Unitat2_files/figure-html/nice-fig-1.png" alt="Plot with connected points showing that vapor pressure of mercury increases exponentially as temperature increases." width="120%" />
 <p class="caption">
 Figure 3.1: Here is a nice figure!
 </p>
 </div>
-<p>Don’t miss Table <a href="cross.html#tab:nice-tab">3.1</a>.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="cross.html#cb4-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
-<span id="cb4-2"><a href="cross.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(pressure, <span class="dv">10</span>), <span class="at">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</span>
-<span id="cb4-3"><a href="cross.html#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">booktabs =</span> <span class="cn">TRUE</span></span>
-<span id="cb4-4"><a href="cross.html#cb4-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
-<table>
-<caption><span id="tab:nice-tab">Table 3.1: </span>Here is a nice table!</caption>
-<thead>
-<tr class="header">
-<th align="right">temperature</th>
-<th align="right">pressure</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="right">0</td>
-<td align="right">0.0002</td>
-</tr>
-<tr class="even">
-<td align="right">20</td>
-<td align="right">0.0012</td>
-</tr>
-<tr class="odd">
-<td align="right">40</td>
-<td align="right">0.0060</td>
-</tr>
-<tr class="even">
-<td align="right">60</td>
-<td align="right">0.0300</td>
-</tr>
-<tr class="odd">
-<td align="right">80</td>
-<td align="right">0.0900</td>
-</tr>
-<tr class="even">
-<td align="right">100</td>
-<td align="right">0.2700</td>
-</tr>
-<tr class="odd">
-<td align="right">120</td>
-<td align="right">0.7500</td>
-</tr>
-<tr class="even">
-<td align="right">140</td>
-<td align="right">1.8500</td>
-</tr>
-<tr class="odd">
-<td align="right">160</td>
-<td align="right">4.2000</td>
-</tr>
-<tr class="even">
-<td align="right">180</td>
-<td align="right">8.8000</td>
-</tr>
-</tbody>
-</table>
+<p>Don’t miss Table <a href="#tab:nice-tab"><strong>??</strong></a>.</p>
+<iframe src="https://nandoverdu.github.io/u1test1/" width="100%" height="400px" data-external="1">
+</iframe>
 
 </div>
 </div>

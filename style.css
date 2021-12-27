@@ -12,3 +12,9 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.watch-out {
+  background-color: lightpink;
+  border: 3px solid white;
+  
+}
