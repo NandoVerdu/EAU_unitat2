@@ -1,6 +1,6 @@
 ---
 info:
-  name: Quiz Central Tendency
+  name: Nom del test
   main: "<p>Test your knowledge about the mean, median and mode<p>"
   results: "<h5>Learn More<h5><p> Re-read the chapter and take the quiz again if you
     weren't sure about some of the answers<p>"

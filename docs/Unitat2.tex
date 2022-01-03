@@ -37,51 +37,10 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={swisscapital},
-  pdfauthor={John Doe},
+  pdfauthor={Fernando Verdú Primo},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -110,352 +69,314 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{bbm}
+
+
+\AtBeginDocument{\renewcommand{\chaptername}{}}
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{plainnat}
 
-\title{swisscapital}
-\author{John Doe}
-\date{2021-12-26}
+\author{Fernando Verdú Primo}
+\date{2022-01-03}
 
-\usepackage{amsthm}
-\newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}{Lemma}[chapter]
-\newtheorem{corollary}{Corollary}[chapter]
-\newtheorem{proposition}{Proposition}[chapter]
-\newtheorem{conjecture}{Conjecture}[chapter]
-\theoremstyle{definition}
-\newtheorem{definition}{Definition}[chapter]
-\theoremstyle{definition}
-\newtheorem{example}{Example}[chapter]
-\theoremstyle{definition}
-\newtheorem{exercise}{Exercise}[chapter]
-\theoremstyle{definition}
-\newtheorem{hypothesis}{Hypothesis}[chapter]
-\theoremstyle{remark}
-\newtheorem*{remark}{Remark}
-\newtheorem*{solution}{Solution}
 \begin{document}
-\maketitle
+
+\includepdf[pages={1}, scale=1]{OfficialFrontpages.pdf}
+\newpage
 
 {
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\hypertarget{about}{%
-\chapter{About}\label{about}}
+\hypertarget{introducciuxf3}{%
+\chapter{Introducció}\label{introducciuxf3}}
 
-This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports; for example, a math equation \(a^2 + b^2 = c^2\).
+L'organització, el treball en equip, la comunicació (tant interna com externa a l'empresa) i l'organització de la informació i arxiu són aspectes molt importants per a qualsevol empresa.
 
-\hypertarget{usage}{%
-\section{Usage}\label{usage}}
+\hypertarget{conceptes-buxe0sics}{%
+\chapter{Conceptes bàsics}\label{conceptes-buxe0sics}}
 
-Each \textbf{bookdown} chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter \emph{must} start with a first-level heading: \texttt{\#\ A\ good\ chapter}, and can contain one (and only one) first-level heading.
+\hypertarget{organitzaciuxf3-de-lempresa}{%
+\section{Organització de l'empresa}\label{organitzaciuxf3-de-lempresa}}
 
-Use second-level and higher headings within chapters like: \texttt{\#\#\ A\ short\ section} or \texttt{\#\#\#\ An\ even\ shorter\ section}.
-
-The \texttt{index.Rmd} file is required, and is also your first book chapter. It will be the homepage when you render the book.
-
-\hypertarget{render-book}{%
-\section{Render book}\label{render-book}}
-
-You can render the HTML version of this example book without changing anything:
+L'\textbf{organigrama} és una representació de l'organització d'una empresa que reflecteix:
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+\def\labelenumi{\alph{enumi}.}
 \item
-  Find the \textbf{Build} pane in the RStudio IDE, and
+  L'\textbf{estructura} de l'empresa amb els seus diferents departaments, seccions, divisions, etcétera.
 \item
-  Click on \textbf{Build Book}, then select your output format, or select ``All formats'' if you'd like to use multiple formats from the same book source files.
+  L'\textbf{ordre jeràrquic} i l'establiment de les \textbf{relacions} entre els diferents graons que el configuren. L'ordre jeràrquic dóna lloc al nivell de responsabilitat.
+\item
+  Els \textbf{canals de comunicació}.
 \end{enumerate}
 
-Or build the book from the R console:
+\hypertarget{tipus-dorganigrama}{%
+\subsection{Tipus d'organigrama}\label{tipus-dorganigrama}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{render\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-To render this example to PDF as a \texttt{bookdown::pdf\_book}, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.org/tinytex/}.
-
-\hypertarget{preview-book}{%
-\section{Preview book}\label{preview-book}}
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in ``Preview book'', or from the R console:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{bookdown}\SpecialCharTok{::}\FunctionTok{serve\_book}\NormalTok{()}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{hello-bookdown}{%
-\chapter{Hello bookdown}\label{hello-bookdown}}
-
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (\texttt{\#}) per .Rmd file.
-
-\hypertarget{a-section}{%
-\section{A section}\label{a-section}}
-
-All chapter sections start with a second-level (\texttt{\#\#}) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
-
-\hypertarget{an-unnumbered-section}{%
-\subsection*{An unnumbered section}\label{an-unnumbered-section}}
-\addcontentsline{toc}{subsection}{An unnumbered section}
-
-Chapters and sections are numbered by default. To un-number a heading, add a \texttt{\{.unnumbered\}} or the shorter \texttt{\{-\}} at the end of the heading, like in this section.
-
-\hypertarget{cross}{%
-\chapter{Cross-references}\label{cross}}
-
-Cross-references make it easier for your readers to find and link to elements in your book.
-
-\hypertarget{chapters-and-sub-chapters}{%
-\section{Chapters and sub-chapters}\label{chapters-and-sub-chapters}}
-
-There are two steps to cross-reference any heading:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Label the heading: \texttt{\#\ Hello\ world\ \{\#nice-label\}}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Leave the label off if you like the automated heading generated based on your heading title: for example, \texttt{\#\ Hello\ world} = \texttt{\#\ Hello\ world\ \{\#hello-world\}}.
-  \item
-    To label an un-numbered heading, use: \texttt{\#\ Hello\ world\ \{-\#nice-label\}} or \texttt{\{\#\ Hello\ world\ .unnumbered\}}.
-  \end{itemize}
-\item
-  Next, reference the labeled heading anywhere in the text using \texttt{\textbackslash{}@ref(nice-label)}; for example, please see Chapter \ref{cross}.
-
-  \begin{itemize}
-  \tightlist
-  \item
-    If you prefer text as the link instead of a numbered reference use: \protect\hyperlink{cross}{any text you want can go here}.
-  \end{itemize}
-\end{enumerate}
-
-\hypertarget{captioned-figures-and-tables}{%
-\section{Captioned figures and tables}\label{captioned-figures-and-tables}}
-
-Figures and tables \emph{with captions} can also be cross-referenced from elsewhere in your book using \texttt{\textbackslash{}@ref(fig:chunk-label)} and \texttt{\textbackslash{}@ref(tab:chunk-label)}, respectively.
-
-See Figure \ref{fig:nice-fig}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{par}\NormalTok{(}\AttributeTok{mar =} \FunctionTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\FunctionTok{plot}\NormalTok{(pressure, }\AttributeTok{type =} \StringTok{\textquotesingle{}b\textquotesingle{}}\NormalTok{, }\AttributeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+El que més s'utilitza és l'\textbf{organigrama funcional}. Es caracteritza per agrupar les activitats per departaments segons les funcions bàsiques de l'empresa.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{Unitat2_files/figure-latex/nice-fig-1} 
+{\centering \includegraphics[width=0.8\linewidth]{organigrama} 
 
 }
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
+\caption{Exemple d'organigrama funcional}\label{fig:unnamed-chunk-1}
 \end{figure}
 
-Don't miss Table \ref{tab:nice-tab}.
+\vspace{3cm}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\SpecialCharTok{::}\FunctionTok{kable}\NormalTok{(}
-  \FunctionTok{head}\NormalTok{(pressure, }\DecValTok{10}\NormalTok{), }\AttributeTok{caption =} \StringTok{\textquotesingle{}Here is a nice table!\textquotesingle{}}\NormalTok{,}
-  \AttributeTok{booktabs =} \ConstantTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{figure}
 
-\begin{table}
+{\centering \includegraphics[width=0.8\linewidth]{matricial} 
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}[t]{rr}
+}
+
+\caption{Exemple d'organigrama matricial}\label{fig:unnamed-chunk-2}
+\end{figure}
+
+\textbf{Recerca de informació sobre tipus d'organigrames, gràfiques, significat i exemples.}
+
+\hypertarget{avantatges-i-inconvenients-de-la-utilitzaciuxf3-dorganigrames}{%
+\subsection{Avantatges i inconvenients de la utilització d'organigrames}\label{avantatges-i-inconvenients-de-la-utilitzaciuxf3-dorganigrames}}
+
+\hypertarget{avantatges}{%
+\subsubsection{Avantatges}\label{avantatges}}
+
+\begin{itemize}
+\tightlist
+\item
+  Les tasques i funcions de cada treballador estan delimitades i definides amb claredat.
+\item
+  Facilita i deixa clares les relacions entre els diferents òrgans de l'empresa, evitant malentesos i conflictes.
+\item
+  Treu a la llum defectes que hi ha en diferents àmbits de l'empresa.
+\item
+  Ajuda a l'orientació i a la integració dels nous admesos.
+\item
+  Permet programar amb claredat les línies de promoció de les persones de l'empresa.
+\item
+  Proporciona a les persones alienes a l'empresa una visió clara i ràpida de l'estructura organitzativa.
+\end{itemize}
+
+\hypertarget{inconvenients}{%
+\subsubsection{Inconvenients}\label{inconvenients}}
+
+\begin{itemize}
+\tightlist
+\item
+  Simplifica la complexa realitat de les relacions que es donen entre els diferents llocs.
+\item
+  Té en compte, gairebé exclusivament, relacions jeràrquiques.
+\item
+  No té cura de les relacions funcionals.
+\item
+  Reprodueix l'estructura en el moment de la seua elaboració, per la qual cosa a vegades no correspon amb la realitat.
+\item
+  Suposa un cost considerable.
+\item
+  S'ha d'actualitzar constantment.
+\end{itemize}
+
+\hypertarget{quuxe9-uxe9s-el-treball-en-equip}{%
+\section{Qué és el treball en equip?}\label{quuxe9-uxe9s-el-treball-en-equip}}
+
+El \textbf{treball en equip} implica un grup de persones traballant de manera coordinada en l'execució d'un projecte. El resultat final és responsabilitat de l'equip, però no de cadascun dels seus membres de manera independent.
+
+Cada membre de l'equip és responsable d'una tasca i només si tots compleixen la seua funció serà possible tirar endavant el projecte.
+
+El treball en equip no és només la suma de les aportacions individuals. Un grup de persones que treballen juntes però sense cap coordinació, en el qual cada un fa la seua feina de manera individual sense comptar amb els altres, no forma un equip.Per exemple:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  Un grup de mecànics d'un taller, en el qual cadascun és responsable dels cotxes que repara, no forma un equip.
+\item
+  Un grup de professionals mèdics en una sala d'operacions (cirurgià, anestesista, infermera i especialista cardiovascular) sí que formen un equip. Tots treballen junts, cadascun en la seva especialitat, i el treball de tots junts és fonamental per tal que l'operació tinga èxit, per la qual cosa han d'estar coordinats.
+\end{enumerate}
+
+\hypertarget{comunicaciuxf3-i-transmisiuxf3}{%
+\chapter{Comunicació i transmisió}\label{comunicaciuxf3-i-transmisiuxf3}}
+
+La necessitat de comunicació és indubtable en qualsevol àmbit de la vida, i també en el treball, sobretot quan es treballa en equip.
+
+\textbf{A. Transmissió de la informació interna de l'empresa}
+
+És la que es produeix dins l'empresa mateixa. Una bona comunicació millora el clima laboral i ajuda a reconèixer possibles deficiències dins l'organització. Una bona xarxa de comunicació interna ajuda també a agilitzar la feina.
+
+\textbf{B. Transmissió de la informació externa}
+
+Per la seua importància, la comunicació de l'empresaamb l'entorn exterior meriex una atenció especial, principalment pel que fa a l'\textbf{atenció al client}, que pot arribar a ser un element promocional per augmentar les vendes tan poderós com la publicitat o els descomptes.
+
+Aterure un client nou és més difícil i costós que mantenir-ne un. Per això, actualment les empreses tracten de fidelitzar els seus clients oferint-los un bon servei.
+
+Els clients augmentaran de nombre si coneixem les seues necessitats i si les sabem satisfer. Aquestes necessitats canvien, per la qual cosa l'empresa ha d'adaptar els seus productes, serveis i processos a aquests canvis amb la participació de tots els seus departaments.
+
+És important recordar que un client passa a ser com un corresponsal del nostre producte pea a altres possibles clients.
+
+\textbf{C. Formes de comunicació i transmissió externa}
+
+\textbf{La comunicació oral}
+
+De tots els mitjans orals de comunicació en l'empresa el m'es important és sens dubte el \textbf{telèfon}, per la freqüència amb què s'utilitza. Ens permet comunicar-nos amb l'exterior: clients, proveïdors, entitats bancàries, etc. És important que la persona que manté la conversa telefònica tinga un tracte cortès i adequat, que utilitze un llenguatge correcte i que mostre interès pel seu interlocutor.
+
+A més, gràcies a la informàtica podem comptar amb la \textbf{videoconferència}, que és la comunicació a temps real entre dues o més persones que es troben en un espai físic diferent i que es comuniquen a través d'internet utilitzant àudio i també vídeo. Permet la comunicació sense necessitat de desplaçar-se.
+
+\begin{longtable}[]{@{}l@{}}
 \toprule
-temperature & pressure\\
-\midrule
-0 & 0.0002\\
-20 & 0.0012\\
-40 & 0.0060\\
-60 & 0.0300\\
-80 & 0.0900\\
-\addlinespace
-100 & 0.2700\\
-120 & 0.7500\\
-140 & 1.8500\\
-160 & 4.2000\\
-180 & 8.8000\\
+\endhead
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+\textbf{IMPORTANT}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+\textbf{Regles importants per a la persona que atén un client:}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+1. Mostar atenció i empatia\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+2. Tenir una presentació adequada\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+3. Mostrar una atenció personal i amable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+4. Tenir a la mà informació adequada\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+5. Tenir una expressió corporal i oral adequada\strut
+\end{minipage}\tabularnewline
 \bottomrule
-\end{tabular}
-\end{table}
+\end{longtable}
 
-\hypertarget{parts}{%
-\chapter{Parts}\label{parts}}
+\textbf{La comunicació escrita}
 
-You can add parts to organize one or more book chapters together. Parts can be inserted at the top of an .Rmd file, before the first-level chapter heading in that same file.
+La correspondència comercial té un paper determinant en la comunicació d'una empresa: estableix una relació entre aquesta i els agents externs (clients, proveïdors, creditors, etcétera) i proporciona una determinada imatge de l'empresa.
 
-Add a numbered part: \texttt{\#\ (PART)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
+La \textbf{carta comercial} és la manera de comuncació tradicional més important en una empresa, malgrat que actualment s'estan imposant amb força les formes de comuncació a través de xarxa (correu electrònic, adreces web o xarxes socials).
 
-Add an unnumbered part: \texttt{\#\ (PART\textbackslash{}*)\ Act\ one\ \{-\}} (followed by \texttt{\#\ A\ chapter})
-
-Add an appendix as a special kind of un-numbered part: \texttt{\#\ (APPENDIX)\ Other\ stuff\ \{-\}} (followed by \texttt{\#\ A\ chapter}). Chapters in an appendix are prepended with letters instead of numbers.
-
-\hypertarget{footnotes-and-citations}{%
-\chapter{Footnotes and citations}\label{footnotes-and-citations}}
-
-\hypertarget{footnotes}{%
-\section{Footnotes}\label{footnotes}}
-
-Footnotes are put inside the square brackets after a caret \texttt{\^{}{[}{]}}. Like this one \footnote{This is a footnote.}.
-
-\hypertarget{citations}{%
-\section{Citations}\label{citations}}
-
-Reference items in your bibliography file(s) using \texttt{@key}.
-
-For example, we are using the \textbf{bookdown} package \citep{R-bookdown} (check out the last code chunk in index.Rmd to see how this citation key was added) in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015} (this citation was added manually in an external file book.bib).
-Note that the \texttt{.bib} files need to be listed in the index.Rmd with the YAML \texttt{bibliography} key.
-
-The RStudio Visual Markdown Editor can also make it easier to insert citations: \url{https://rstudio.github.io/visual-markdown-editing/\#/citations}
-
-\hypertarget{blocks}{%
-\chapter{Blocks}\label{blocks}}
-
-\hypertarget{equations}{%
-\section{Equations}\label{equations}}
-
-Here is an equation.
-
-\begin{equation} 
-  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
-  \label{eq:binom}
-\end{equation}
-
-You may refer to using \texttt{\textbackslash{}@ref(eq:binom)}, like see Equation \eqref{eq:binom}.
-
-\hypertarget{theorems-and-proofs}{%
-\section{Theorems and proofs}\label{theorems-and-proofs}}
-
-Labeled theorems can be referenced in text using \texttt{\textbackslash{}@ref(thm:tri)}, for example, check out this smart theorem \ref{thm:tri}.
-
-\begin{theorem}
-\protect\hypertarget{thm:tri}{}\label{thm:tri}For a right triangle, if \(c\) denotes the \emph{length} of the hypotenuse
-and \(a\) and \(b\) denote the lengths of the \textbf{other} two sides, we have
-\[a^2 + b^2 = c^2\]
-\end{theorem}
-
-Read more here \url{https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html}.
-
-\hypertarget{callout-blocks}{%
-\section{Callout blocks}\label{callout-blocks}}
-
-The R Markdown Cookbook provides more help on how to use custom blocks to design your own callouts: \url{https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html}
-
-\hypertarget{sharing-your-book}{%
-\chapter{Sharing your book}\label{sharing-your-book}}
-
-\hypertarget{publishing}{%
-\section{Publishing}\label{publishing}}
-
-HTML books can be published online, see: \url{https://bookdown.org/yihui/bookdown/publishing.html}
-
-\hypertarget{pages}{%
-\section{404 pages}\label{pages}}
-
-By default, users will be directed to a 404 page if they try to access a webpage that cannot be found. If you'd like to customize your 404 page instead of using the default, you may add either a \texttt{\_404.Rmd} or \texttt{\_404.md} file to your project root and use code and/or Markdown syntax.
-
-\hypertarget{metadata-for-sharing}{%
-\section{Metadata for sharing}\label{metadata-for-sharing}}
-
-Bookdown HTML books will provide HTML metadata for social sharing on platforms like Twitter, Facebook, and LinkedIn, using information you provide in the \texttt{index.Rmd} YAML. To setup, set the \texttt{url} for your book and the path to your \texttt{cover-image} file. Your book's \texttt{title} and \texttt{description} are also used.
-
-This \texttt{gitbook} uses the same social sharing data across all chapters in your book- all links shared will look the same.
-
-Specify your book's source repository on GitHub using the \texttt{edit} key under the configuration options in the \texttt{\_output.yml} file, which allows users to suggest an edit by linking to a chapter's source file.
-
-Read more about the features of this output format here:
-
-\url{https://pkgs.rstudio.com/bookdown/reference/gitbook.html}
-
-Or use:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{?bookdown}\SpecialCharTok{::}\NormalTok{gitbook}
-\end{Highlighting}
-\end{Shaded}
-
-\hypertarget{r-markdown}{%
-\section{R Markdown}\label{r-markdown}}
-
-\hypertarget{question}{%
-\chapter{Question}\label{question}}
-
-What is the seat of the federal authorities in Switzerland (i.e., the de facto capital)?
-
-\hypertarget{answerlist}{%
-\section{Answerlist}\label{answerlist}}
+Per fer una redacció correcta d'una carta, s'ha de tenir en compte una sèrie de normes bàsiques:
 
 \begin{itemize}
 \tightlist
 \item
-  Basel
+  Netedat i correcció.
 \item
-  Bern
+  Frases curtes, senzilles, ben redactades i sense faltes d'ortografia.
 \item
-  Geneva
-\item
-  Lausanne
-\item
-  Zurich
-\item
-  St.~Gallen
-\item
-  Vaduz
+  Tracte cortès.
 \end{itemize}
 
-\hypertarget{solution}{%
-\chapter{Solution}\label{solution}}
+A més, hi ha una sèrie de consells que seran determinants en l'efectivitat de la carta comercial:
 
-There is no de jure capital but the de facto capital and seat of the federal authorities is Bern.
+\begin{longtable}[]{@{}l@{}}
+\toprule
+\endhead
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.85}}\raggedright
+Si comencem en plural, s'ha de continuar així durant tota la carta.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.85}}\raggedright
+Si responem una carta, s'ha de citar la data, la referència i l'assumpte.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.85}}\raggedright
+La justificació completa dóna lloc a documents estèticament uniformes. El marge dret sense justificar proporciona domuments més vius i directes.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.85}}\raggedright
+Fer servir el doble espai entre línies permet una lectura més fàcil.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.85}}\raggedright
+Els pàragrafs curts conviden més a la lectura que els que són massa llargs.\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
-\hypertarget{answerlist-1}{%
-\section{Answerlist}\label{answerlist-1}}
+\textbf{La comunicació a través d'internet}
 
-\begin{itemize}
+Internet s'ha imposat amb força com a mitjà de comunicació a l'empresa. Per menuda que siga, es fan les tasques de gestió i comunicació a través d'un ordinador i la xarxa.
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \textbf{El correu electronic} (e-mail). Serveix per enviar i rebre missatges de text, imatges i arxius complets.
+\item
+  Les \textbf{pàgines web} també tenen utilitat comercial. A través d'aquestes podem obtenir gran quantitat d'informació, conèixer altres empreses i donar-nos a conèixer.
+\end{enumerate}
+
+També és un mitjà de \textbf{publicitat} important perquè podem arribar a un gran nombre de persones i empreses en tot el món i a qualsevol hora. A més, podem trobar adreces, catàlegs de productes, preus, condicions de lliurament i de pagament, dades sobre el mercat, etc. També podem fer directament comandes de compra i rebre comandes de possibles clients.
+
+\includegraphics[width=0.8\linewidth]{./internet}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\setcounter{enumi}{2}
 \tightlist
 \item
-  False
+  \textbf{Altres formes d'ús de la xarxa:} encara que tenen un àmbit d'aplicació molt present en el terreny de les relacions personals, també poden resultar de molta ajuda en l'àmbit comercial. Les més importants són:
+\end{enumerate}
+
+\begin{itemize}
 \item
-  True
+  Les \textbf{llistes de correu}: són bases de dades amb adreces de persones o empreses que tenen interessos comuns i que serveixen per enviar missatges, per intercanviar notícies o per organitzar grups de debat o negociació.
 \item
-  False
+  Els \textbf{grups de notícies} o newsgroups: serveixen per col·locar o rebre missatges, notícies o informació de qualsevol tipus agrupada per temes d'interés. Així, una empresa pot estar al corrent de tota l'actualitat i les novetats que van sorgint sobre qualsevol assumpte que consideri interessant per al seu negoci.
 \item
-  False
-\item
-  False
-\item
-  False
-\item
-  False
+  Les \textbf{xarxes socials}: són d'aparició més recent. Amb aquestes podem crear un grup d'empreses amb les quals mantenim relacions i utilitzar-les com a mitjà de comunicació.
 \end{itemize}
 
-\hypertarget{meta-information}{%
-\chapter{Meta-information}\label{meta-information}}
+\hypertarget{testing}{%
+\chapter{Testing}\label{testing}}
 
-exname: Swiss Capital
-extype: schoice
-exsolution: 0100000
-exshuffle: 5
+\includegraphics{qui1.png}
+
+\hypertarget{organitzaciuxf3-i-arxiu-de-la-informaciuxf3}{%
+\chapter{Organització i arxiu de la informació}\label{organitzaciuxf3-i-arxiu-de-la-informaciuxf3}}
+
+L'empresa genera una gran quantitat d'informació i de documentació que cal organitzar i conservar. L'organització de la informació es du a terme:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  \textbf{Per l'interés de l'empresa}. És necessari per a un bon funcionament.
+\item
+  \textbf{Per exigències legals. El Codi de Comerç indica:} *``Els empresaris conservaran els llibres, correspondència, documentació i justificants relatius al seu negoci, degudament ordenats, durant sis anys apartir del darrer assentament fet als llibres, tret del que s'estableix per disposicions generals o especials.''
+\end{enumerate}
+
+S'han d'establir els criteris i organitzar la manera de dear i arxivar la informació i els documents de l'empresa. Quan comencem la Simulació per departaments, tots els sistemes d'arxiu han d'estar degudament preparats.
+
+\begin{longtable}[]{@{}l@{}}
+\toprule
+\endhead
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+\textbf{IMPORTANT}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+El \textbf{Certificat Digital de la Casa de Moneda i Timbre} (CERES)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+El Certicicat d'Usuari és un document digital que conté, entre altres, les dades identificatives de l'usuari.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+a. Permet identificar-se a Internet i intercanviar informació amb altres persones amb la garantia que només l'usuari i el seu interlocutor hi poden accedir.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+b. Permet fer de manera segura tràmits amb l'Administració Pública (Hisenda i Seguritat Social) a través d'internet.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+c.~S'eviten els desplaçaments i les esperes innecessàries.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+d.~No cal fer servir cap aplicació addicional, es pot fer a través de qualsevol navegador web.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{(\columnwidth - 0\tabcolsep) * \real{0.81}}\raggedright
+e. És gratuït. Per a més informació i per obtenir el Certificat d'Usuari, consulta aquesta adreça: \url{www.cert.fnmt.es}\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
   \bibliography{book.bib,packages.bib}
 

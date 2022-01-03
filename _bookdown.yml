@@ -3,4 +3,9 @@ delete_merged_file: true
 output_dir: "docs"
 language:
   ui:
-    chapter_name: "Unitat "
+    chapter_name: '' 
+  label:
+    fig: 'Figura'
+    tab: 'Taula'
+    eq: 'Equació'
+    

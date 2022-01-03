@@ -1,60 +1,94 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
+author: "Fernando Verdú Primo"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+title: |
+  ![](data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==){height=842px}  
+header-includes: 
+- \AtBeginDocument{\renewcommand{\chaptername}{}}
 documentclass: book
-bibliography: [book.bib, packages.bib]
-# url: your book url like https://bookdown.org/yihui/bookdown
-# cover-image: path to the social sharing image like images/cover.jpg
-description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+bibliography:
+- book.bib
+- packages.bib
+description: null
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: nandoverdu/EAU_unitat2
 ---
 
-# About
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
 
-## Usage 
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
 
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
 
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
 
-## Render book
 
-You can render the HTML version of this example book without changing anything:
 
-1. Find the **Build** pane in the RStudio IDE, and
+# Introducció
 
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
+<img src="cover.png" style="position:absolute;top:0px;align:center;" /> 
 
-Or build the book from the R console:
+L'organització, el treball en equip, la comunicació (tant interna com externa a l'empresa) i l'organització de la informació i arxiu són aspectes molt importants per a qualsevol empresa.
 
-```{r, eval=FALSE}
-bookdown::render_book()
+
+
+
+# Conceptes bàsics 
+
+## Organització de l'empresa
+
+L'**organigrama** és una representació de l'organització d'una empresa que reflecteix:
+
+a. L'**estructura** de l'empresa amb els seus diferents departaments, seccions, divisions, etcétera.
+
+b. L'**ordre jeràrquic** i l'establiment de les **relacions** entre els diferents graons que el configuren. L'ordre jeràrquic dóna lloc al nivell de responsabilitat.
+
+c. Els **canals de comunicació**.
+
+### Tipus d'organigrama
+
+El que més s'utilitza és l'**organigrama funcional**. Es caracteritza per agrupar les activitats per departaments segons les funcions bàsiques de l'empresa.
+
+```{r, echo=FALSE,fig.align='center',out.width="80%", fig.cap="Exemple d'organigrama funcional"}
+knitr::include_graphics("organigrama.png")
 ```
 
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
+\vspace{3cm}
 
-## Preview book
 
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
-
-```{r eval=FALSE}
-bookdown::serve_book()
+```{r, echo=FALSE,fig.align='center',out.width="80%", fig.cap="Exemple d'organigrama matricial"}
+knitr::include_graphics("matricial.png")
 ```
 
+**Recerca de informació sobre tipus d'organigrames, gràfiques, significat i exemples.**
 
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```
+### Avantatges i inconvenients  de la utilització d'organigrames
+
+#### Avantatges
+
+- Les tasques i funcions de cada treballador estan delimitades i definides amb claredat.
+- Facilita i deixa clares les relacions entre els diferents òrgans de l'empresa, evitant malentesos i conflictes.
+- Treu a la llum defectes que hi ha en diferents àmbits de l'empresa.
+- Ajuda a l'orientació i a la integració dels nous admesos.
+- Permet programar amb claredat les línies de promoció de les persones de l'empresa.
+- Proporciona a les persones alienes a l'empresa una visió clara i ràpida de l'estructura organitzativa.
+
+#### Inconvenients
+
+- Simplifica la complexa realitat de les relacions que es donen entre els diferents llocs.
+- Té en compte, gairebé exclusivament, relacions jeràrquiques.
+- No té cura de les relacions funcionals.
+- Reprodueix l'estructura en el moment de la seua elaboració, per la qual cosa a vegades no correspon amb la realitat.
+- Suposa un cost considerable.
+- S'ha d'actualitzar constantment.
+
+## Qué és el treball en equip?
+
+El **treball en equip** implica un grup de persones traballant de manera coordinada en l'execució d'un projecte. El resultat final és responsabilitat de l'equip, però no de cadascun dels seus membres de manera independent.
+
+Cada membre de l'equip és responsable d'una tasca i només si tots compleixen la seua funció serà possible tirar endavant el projecte.
+
+El treball en equip no és només la suma de les aportacions individuals. Un grup de persones que treballen juntes però sense cap coordinació, en el qual cada un fa la seua feina de manera individual sense comptar amb els altres, no forma un equip.Per exemple:
+
+a. Un grup de mecànics d'un taller, en el qual cadascun és responsable dels cotxes que repara, no forma un equip.
+
+b. Un grup de professionals mèdics en una sala d'operacions (cirurgià, anestesista, infermera i especialista cardiovascular) sí que formen un equip. Tots treballen junts, cadascun en la seva especialitat, i el treball de tots junts és fonamental per tal que l'operació tinga èxit, per la qual cosa han d'estar coordinats.
