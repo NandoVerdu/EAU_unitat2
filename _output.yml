@@ -1,6 +1,4 @@
 bookdown::gitbook:
-  includes:
-   # before_body: cover.svg
   css: style.css
   config:
     toc:
@@ -25,5 +23,3 @@ bookdown::pdf_book:
 #bookdown::epub_book: default
 #bookdown::html_book: 
  # toc: false
-  
-  

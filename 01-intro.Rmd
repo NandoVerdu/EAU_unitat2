@@ -102,16 +102,11 @@ c. **Altres formes d'ús de la xarxa:** encara que tenen un àmbit d'aplicació 
 
 - Les **xarxes socials**: són d'aparició més recent. Amb aquestes podem crear un grup d'empreses amb les quals mantenim relacions i utilitzar-les com a mitjà de comunicació. 
 
-# Testing
-
-```{r echo=FALSE, eval=knitr::is_latex_output()}
-res=webshot::webshot('testQuiz.html', 'qui1.png')
-knitr::include_graphics(res)
-```
 
 
-```{r, echo=FALSE}
-htmltools::includeHTML("testQuiz.html")
-```
+
+
+
+
 
 

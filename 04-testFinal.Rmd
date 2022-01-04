@@ -1,0 +1,24 @@
+# Test final unitat
+
+```{r setup1 , include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+```{r testquiz1, echo=FALSE, eval=TRUE, cache=FALSE}
+library(yaml)
+library(rjson)
+htmltools::includeHTML("quizzesFinal/html/header.html")
+a <- read_yaml(file="quizzesFinal/quizyaml/quiz1.yml")  # read Quiz yaml
+b <- toJSON(a)                                     # convert to JSON
+CON <- file("quizzesFinal/quizjs/test.js")              # Write to .js
+writeLines(c('var quizJSON = ',b,';'),CON, sep="")
+close(CON)
+
+htmltools::includeHTML("quizzesFinal/html/body.html")   # insert quiz body
+```
+
+```{r, echo=FALSE, cache=FALSE}
+pagedown::chrome_print('docs/test-final-unitat.html', output='docs/testFinal.pdf',format='pdf')
+```
+
+\includepdf[pages=-,nup=2,pagecommand={}]{docs/testFinal.pdf}
