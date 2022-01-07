@@ -3,7 +3,7 @@ output:
   pdf_document: default
   html_document: default
 ---
-# Comunicació i transmisió
+## 2.2 Comunicació i transmisió
 La necessitat de comunicació és indubtable en qualsevol àmbit de la vida, i també en el treball, sobretot quan es treballa en equip.
 
 **A. Transmissió de la informació interna de l'empresa**

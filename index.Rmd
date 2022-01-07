@@ -6,30 +6,39 @@ title: # |
   # ![class='btn noHover'](cover.png){height=842px style="display:block; margin:0 auto, align:center; pointer-events:none;"}
 header-includes: 
 - \AtBeginDocument{\renewcommand{\chaptername}{}}
+- \setcounter{chapter}{1}
+- \pagestyle{plain}
+- \fancyhf{}
+- \fancyfoot[R]{\thepage}
 documentclass: book
-classoption: openany
+classoption:
+  - openany
 bibliography:
 - book.bib
 - packages.bib
 description: null
 link-citations: yes
 github-repo: nandoverdu/EAU_unitat2
+papersize: a4
+linestretch: 2
+geometry:
+  - top =1.5cm
+  - bottom = 2.3cm
+links-as-notes: true
 ---
 
 
 
 
-# Introducció
+# TEMA 2: Organització per departaments
 
 
 L'organització, el treball en equip, la comunicació (tant interna com externa a l'empresa) i l'organització de la informació i arxiu són aspectes molt importants per a qualsevol empresa.
 
 
+## 2.1 Conceptes bàsics 
 
-
-# Conceptes bàsics 
-
-## Organització de l'empresa
+### 2.1.1 Organització de l'empresa
 
 L'**organigrama** és una representació de l'organització d'una empresa que reflecteix:
 
@@ -39,7 +48,7 @@ b. L'**ordre jeràrquic** i l'establiment de les **relacions** entre els diferen
 
 c. Els **canals de comunicació**.
 
-### Tipus d'organigrama
+#### 2.1.1.1 Tipus d'organigrama
 
 El que més s'utilitza és l'**organigrama funcional**. Es caracteritza per agrupar les activitats per departaments segons les funcions bàsiques de l'empresa.
 
@@ -56,9 +65,9 @@ knitr::include_graphics("matricial.png")
 
 **Recerca de informació sobre tipus d'organigrames, gràfiques, significat i exemples.**
 
-### Avantatges i inconvenients  de la utilització d'organigrames
+#### 2.1.1.2 Avantatges i inconvenients  de la utilització d'organigrames
 
-#### Avantatges
+##### Avantatges
 
 - Les tasques i funcions de cada treballador estan delimitades i definides amb claredat.
 - Facilita i deixa clares les relacions entre els diferents òrgans de l'empresa, evitant malentesos i conflictes.
@@ -67,7 +76,7 @@ knitr::include_graphics("matricial.png")
 - Permet programar amb claredat les línies de promoció de les persones de l'empresa.
 - Proporciona a les persones alienes a l'empresa una visió clara i ràpida de l'estructura organitzativa.
 
-#### Inconvenients
+##### Inconvenients
 
 - Simplifica la complexa realitat de les relacions que es donen entre els diferents llocs.
 - Té en compte, gairebé exclusivament, relacions jeràrquiques.
@@ -76,7 +85,7 @@ knitr::include_graphics("matricial.png")
 - Suposa un cost considerable.
 - S'ha d'actualitzar constantment.
 
-## Qué és el treball en equip?
+### 2.1.2 Qué és el treball en equip?
 
 El **treball en equip** implica un grup de persones traballant de manera coordinada en l'execució d'un projecte. El resultat final és responsabilitat de l'equip, però no de cadascun dels seus membres de manera independent.
 

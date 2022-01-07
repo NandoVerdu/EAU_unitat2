@@ -1,4 +1,4 @@
-# Organització i arxiu de la informació
+## 2.3 Organització i arxiu de la informació
 
 L'empresa genera una gran quantitat d'informació i de documentació que cal organitzar i conservar. L'organització de la informació es du a terme:
 
@@ -28,4 +28,18 @@ e. És gratuït. Per a més informació i per obtenir el Certificat d'Usuari, co
 ---------------------------------------------------------
 
 
+```{r, echo=FALSE,  results='asis', cache=FALSE, eval=knitr::is_html_output()}
+cat('## 2.4 Tasques per departaments a l\'empresa')
+```
 
+
+
+```{r, echo=FALSE, eval=knitr::is_html_output()}
+htmltools::includeHTML("tabla.html")
+```
+
+```{r, echo=FALSE, cache=FALSE}
+pagedown::chrome_print('tabla.html', output='tabla.pdf',format='pdf')
+```
+
+\includepdf[offset=0 2cm,scale=0.8,pages=-,nup=1,pagecommand=\section{2.4 Tasques per departaments a l'empresa}]{tabla.pdf}

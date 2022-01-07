@@ -1,25 +1,13 @@
+## 2.5 Tests
 
-# Test comprovació continguts unitat
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```{r, echo=FALSE, cache=FALSE, eval=knitr::is_html_output() }
+knitr::include_url('https://nandoverdu.github.io/quizTasques_EAU_t2/')
+knitr::include_url('https://nandoverdu.github.io/quizFinal_EAU_t2/')
 ```
 
-```{r testquiz, echo=FALSE, eval=TRUE, cache=FALSE}
-library(yaml)
-library(rjson)
-htmltools::includeHTML("quizzesTasques/html/header.html")
-a <- read_yaml(file="quizzesTasques/quizyaml/quiz1.yml")  # read Quiz yaml
-b <- toJSON(a)                                     # convert to JSON
-CON <- file("quizzesTasques/quizjs/test.js")              # Write to .js
-writeLines(c('var quizJSON = ',b,';'),CON, sep="")
-close(CON)
 
-htmltools::includeHTML("quizzesTasques/html/body.html")   # insert quiz body
+
+```{r, eval=knitr::is_latex_output(), results='asis', echo=FALSE}
+cat("Realitza el test [tasques per departaments](https://nandoverdu.github.io/quizTasques_EAU_t2/) i el [test final](https://nandoverdu.github.io/quizFinal_EAU_t2/)" )
 ```
 
-```{r, echo=FALSE, cache=FALSE}
-pagedown::chrome_print('docs/test-comprovació-continguts-unitat.html', output='docs/testTasq.pdf',format='pdf')
-```
-
-\includepdf[pages=-,nup=2,pagecommand={}]{docs/testTasq.pdf}

@@ -1,4 +1,5 @@
 bookdown::gitbook:
+  number_sections: false
   css: style.css
   config:
     toc:
@@ -14,6 +15,7 @@ bookdown::gitbook:
     fontsettings:
       theme: white
 bookdown::pdf_book:
+  number_sections: false
   includes:
     in_header: preamble.tex
     before_body: befheader.tex

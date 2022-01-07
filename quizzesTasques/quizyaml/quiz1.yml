@@ -1,6 +1,6 @@
 ---
 info:
-  name: Selecciona el departament que porta a terme la tasca
+  name: Indica el departament que realitza la tasca
   main: "<p><p>"
   results: "<p><p>"
   level1: Super bé
